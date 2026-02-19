@@ -1,0 +1,9 @@
+[submodule "amp-core"]
+	path = amp-core
+	url = https://github.com/Ampersand-ASL/amp-core.git
+[submodule "kc1fsz-tools-cpp"]
+	path = kc1fsz-tools-cpp
+	url = https://github.com/brucemack/kc1fsz-tools-cpp.git
+[submodule "itu-g711-codec"]
+	path = itu-g711-codec
+	url = https://github.com/brucemack/itu-g711-codec.git
