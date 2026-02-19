@@ -14,17 +14,14 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
+#ifndef PICO_BOARD
 #include <unistd.h>
 #include <fcntl.h>
+#endif
 
 #include <errno.h>
-#include <sys/socket.h>
 #include <poll.h>
 #include <netinet/in.h>
-#include <arpa/inet.h>
-#include <sys/ioctl.h>
-
-#include <sys/types.h>
 
 #include <cstring>
 #include <iostream>
