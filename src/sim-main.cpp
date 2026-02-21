@@ -54,7 +54,7 @@
 using namespace std;
 using namespace kc1fsz;
 
-static const char* VERSION = "20260217.0";
+static const char* VERSION = "20260221.0";
 
 static void sigHandler(int sig);
 
