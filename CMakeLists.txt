@@ -23,15 +23,15 @@ set(CMAKE_CXX_STANDARD 23)
 
 add_executable(voter-sim
   src/sim-main.cpp
-  src/VoterClient.cpp
   src/SignalGenerator.cpp
   amp-core/src/EventLoop.cpp
-  amp-core/src/VoterUtil.cpp
-  amp-core/src/VoterPeer.cpp
   amp-core/src/MultiRouter.cpp
   amp-core/src/Message.cpp
   amp-core/src/ThreadUtil.cpp
   amp-core/src/Transcoder_G711_ULAW.cpp
+  amp-core/src/voter/VoterUtil.cpp
+  amp-core/src/voter/VoterPeer.cpp
+  amp-core/src/voter/VoterClient.cpp
   kc1fsz-tools-cpp/src/Common.cpp
   kc1fsz-tools-cpp/src/NetUtils.cpp
   kc1fsz-tools-cpp/src/StdPollTimer.cpp

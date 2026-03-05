@@ -44,17 +44,18 @@
 #include "MultiRouter.h"
 #include "ThreadUtil.h"
 #include "TimerTask.h"
+#include "voter/VoterClient.h"
 
-#include "VoterClient.h"
 #include "SignalGenerator.h"
 
 #define LINE_ID_VOTER (24)
 #define LINE_ID_GENERATOR (25)
+#define LINE_ID_AUDIO_OUT (0)
 
 using namespace std;
 using namespace kc1fsz;
 
-static const char* VERSION = "20260221.0";
+static const char* VERSION = "20260305.0";
 
 static void sigHandler(int sig);
 
@@ -77,7 +78,7 @@ int main(int argc, const char** argv) {
     MultiRouter router(respQueue);
 
     // Setup link to the voter server
-    VoterClient client24(log, clock, LINE_ID_VOTER, router);
+    VoterClient client24(log, clock, LINE_ID_VOTER, router, LINE_ID_AUDIO_OUT);
     router.addRoute(&client24, LINE_ID_VOTER);
     client24.setClientPassword(getenv("AMP_VOTER_CLIENT_PASSWORD"));
     client24.setServerPassword(getenv("AMP_VOTER_SERVER_PASSWORD"));

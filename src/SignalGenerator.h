@@ -26,7 +26,7 @@
 #include "IAX2Util.h"
 #include "Message.h"
 #include "MessageConsumer.h"
-#include "VoterPeer.h"
+//#include "VoterPeer.h"
 
 namespace kc1fsz {
 
