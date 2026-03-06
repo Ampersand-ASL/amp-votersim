@@ -87,6 +87,7 @@ int main(int argc, const char** argv) {
         log.error("Failed to open connection");
         std::exit(-1);
     }
+    client24.setGeneralPurposeMode(false);
 
     // Can be used in inject tones
     SignalGenerator generator25(log, clock, LINE_ID_GENERATOR, router, LINE_ID_VOTER);
